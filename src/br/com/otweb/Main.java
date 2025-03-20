@@ -56,6 +56,7 @@ public class Main {
         }
     }
 
+    // Start game
     private static void startGame(final Map<String, String> positions) {
         if (nonNull(board)){
             System.out.println("O jogo já foi iniciado");
@@ -79,6 +80,7 @@ public class Main {
     }
 
 
+    // Insert number
     private static void inputNumber() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -96,6 +98,7 @@ public class Main {
         }
     }
 
+    //Remove number
     private static void removeNumber() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -111,6 +114,7 @@ public class Main {
         }
     }
 
+    //Show current game
     private static void showCurrentGame() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -128,6 +132,7 @@ public class Main {
         System.out.printf((BOARD_TEMPLATE) + "\n", args);
     }
 
+    // Status Game
     private static void showGameStatus() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -142,6 +147,7 @@ public class Main {
         }
     }
 
+    //Clear game
     private static void clearGame() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -160,6 +166,7 @@ public class Main {
         }
     }
 
+    //Finish game
     private static void finishGame() {
         if (isNull(board)){
             System.out.println("O jogo ainda não foi iniciado iniciado");
@@ -178,6 +185,7 @@ public class Main {
     }
 
 
+    //Valid number
     private static int runUntilGetValidNumber(final int min, final int max){
         var current = scanner.nextInt();
         while (current < min || current > max){
